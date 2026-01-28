@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Interview Q&A</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body { background: #f4f6fb; }
+        .qa-box {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+        h1 { color: #4f46e5; font-weight: 700; }
+        .accordion-button { font-weight: 600; }
+        .accordion-button:not(.collapsed) {
+            background-color: #e0e7ff;
+            color: #1e1b4b;
+        }
+        .q-number { color: #4f46e5; font-weight: 700; margin-right: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5 mb-5">
+    <div class="qa-box">
+        <h1 class="text-center mb-4">Django Interview Questions</h1>
+
+        <div class="accordion" id="djangoAccordion">
+
+            <!-- 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#a1">
+                        <span class="q-number">1.</span> What is Django?
+                    </button>
+                </h2>
+                <div id="a1" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <strong>Django</strong> is a high-level web framework for building web applications in <strong>Python</strong>.
+                        It follows the <strong>Model-View-Controller (MVC)</strong> architectural pattern and simplifies common web development tasks.
+                        Django is <strong>free and open source</strong> and is used by websites like <strong>Instagram</strong>, <strong>Pinterest</strong>, and <strong>Mozilla</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a2">
+                        <span class="q-number">2.</span> What are the key features of Django?
+                    </button>
+                </h2>
+                <div id="a2" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Object-Relational Mapping (ORM)</strong></li>
+                            <li><strong>URL Routing</strong></li>
+                            <li><strong>Templating Engine</strong></li>
+                            <li><strong>Admin Interface</strong></li>
+                            <li><strong>Authentication and Authorization</strong></li>
+                            <li><strong>Middleware</strong></li>
+                            <li><strong>Security Features</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a3">
+                        <span class="q-number">3.</span> What are the advantages of using Django?
+                    </button>
+                </h2>
+                <div id="a3" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><strong>Rapid Development</strong></li>
+                            <li><strong>Scalability</strong></li>
+                            <li><strong>Security</strong></li>
+                            <li><strong>Versatility</strong></li>
+                            <li><strong>Community Support</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a4">
+                        <span class="q-number">4.</span> How to install Django?
+                    </button>
+                </h2>
+                <div id="a4" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Install <strong>Python</strong></li>
+                            <li>Run <code>pip install Django</code></li>
+                            <li>Verify using <code>django-admin --version</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a5">
+                        <span class="q-number">5.</span> What is the latest version of Django?
+                    </button>
+                </h2>
+                <div id="a5" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        As of <strong>February 2023</strong>, the latest stable version of Django is <strong>4.1.1</strong>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a6">
+                        <span class="q-number">6.</span> What is a Django Project?
+                    </button>
+                </h2>
+                <div id="a6" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A <strong>Django Project</strong> is a collection of settings and configurations for a web application.
+                        It may contain multiple apps.
+                        <br><br>
+                        <code>django-admin startproject myproject</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a7">
+                        <span class="q-number">7.</span> What is a Django App?
+                    </button>
+                </h2>
+                <div id="a7" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A <strong>Django App</strong> is a self-contained module that performs a specific function inside a Django project.
+                        <br><br>
+                        <code>python manage.py startapp app_name</code>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a8">
+                        <span class="q-number">8.</span> What is the Django ORM?
+                    </button>
+                </h2>
+                <div id="a8" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Django ORM</strong> allows interaction with the database using Python objects instead of raw SQL.
+                        <script src="https://gist.github.com/sakshi9098/da01f6a8c8fc2a754bbb749c56a67843.js"></script>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#a9">
+                        <span class="q-number">9.</span> What is a Django Template?
+                    </button>
+                </h2>
+                <div id="a9" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <strong>Django Templates</strong> are used to create HTML pages dynamically using static HTML and template tags.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
